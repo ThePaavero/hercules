@@ -111,4 +111,22 @@ form {
       }
     }
   }
+  select {
+    border: none;
+    background: $dimmedColor;
+    height: $rowHeight;
+    line-height: $rowHeight;
+    font-size: 1.2em;
+    outline: none !important;
+
+    &:focus,
+    &:active {
+      outline: solid 1px red;
+    }
+
+    option {
+      border: none;
+      outline: none !important;
+    }
+  }
 }

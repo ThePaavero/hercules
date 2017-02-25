@@ -35,47 +35,47 @@ body {
 
 @keyframes flicker {
   0% {
-    opacity: 1.05408; }
+    opacity: 0.59897; }
   5% {
-    opacity: 0.8335; }
+    opacity: 0.73452; }
   10% {
-    opacity: 0.59276; }
+    opacity: 1.09311; }
   15% {
-    opacity: 0.31397; }
+    opacity: 0.35059; }
   20% {
-    opacity: 1.03196; }
+    opacity: 0.45553; }
   25% {
-    opacity: 0.6168; }
+    opacity: 0.69458; }
   30% {
-    opacity: 0.6718; }
+    opacity: 0.6917; }
   35% {
-    opacity: 0.54533; }
+    opacity: 0.70045; }
   40% {
-    opacity: 1.00392; }
+    opacity: 1.19169; }
   45% {
-    opacity: 1.17606; }
+    opacity: 0.42147; }
   50% {
-    opacity: 0.86883; }
+    opacity: 1.01774; }
   55% {
-    opacity: 0.63764; }
+    opacity: 1.15422; }
   60% {
-    opacity: 0.95348; }
+    opacity: 1.05605; }
   65% {
-    opacity: 1.28599; }
+    opacity: 1.19612; }
   70% {
-    opacity: 1.27689; }
+    opacity: 1.06549; }
   75% {
-    opacity: 1.00681; }
+    opacity: 0.64829; }
   80% {
-    opacity: 0.93401; }
+    opacity: 1.13242; }
   85% {
-    opacity: 0.3219; }
+    opacity: 1.22057; }
   90% {
-    opacity: 0.37282; }
+    opacity: 0.80622; }
   95% {
-    opacity: 0.78134; }
+    opacity: 0.60986; }
   100% {
-    opacity: 0.5676; } }
+    opacity: 0.37541; } }
 
 @font-face {
   font-family: 'perfect_dos_vga_437regular';
@@ -204,6 +204,19 @@ form input[type=checkbox] {
     height: 1em;
     text-indent: 5.5px;
     background: #0fff00; }
+
+form select {
+  border: none;
+  background: #00a800;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.2em;
+  outline: none !important; }
+  form select:focus, form select:active {
+    outline: solid 1px red; }
+  form select option {
+    border: none;
+    outline: none !important; }
 
 section {
   border: solid 2px #0fff00;
