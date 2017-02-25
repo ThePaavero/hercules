@@ -9,6 +9,7 @@ button {
     color: $primaryColor;
     background: #000;
     border: solid 2px $primaryColor;
+    @include blurText($dimmedColor);
   }
 
   &:active {

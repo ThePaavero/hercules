@@ -1,5 +1,6 @@
 @mixin placeholder() {
   @include dim;
+  @include blurText($dimmedColor);
   position: relative;
   z-index: -1;
   font-size: 1.0001em;
@@ -33,6 +34,7 @@ form {
     font-size: 1.2em;
     display: block;
     width: 100%;
+    @include blurText($dimmedColor);
   }
 
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -100,6 +102,7 @@ form {
       width: 1em;
       height: 1em;
       background: $dimmedColor;
+      @include blur($dimmedColor);
     }
 
     &:checked {

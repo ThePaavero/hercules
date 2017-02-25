@@ -35,47 +35,47 @@ body {
 
 @keyframes flicker {
   0% {
-    opacity: 0.43088; }
+    opacity: 0.84393; }
   5% {
-    opacity: 1.09719; }
+    opacity: 1.26004; }
   10% {
-    opacity: 0.45769; }
+    opacity: 1.20261; }
   15% {
-    opacity: 1.15172; }
+    opacity: 0.48799; }
   20% {
-    opacity: 1.13348; }
+    opacity: 0.93549; }
   25% {
-    opacity: 0.44637; }
+    opacity: 0.92559; }
   30% {
-    opacity: 1.13154; }
+    opacity: 1.23893; }
   35% {
-    opacity: 1.27784; }
+    opacity: 0.68957; }
   40% {
-    opacity: 1.21311; }
+    opacity: 1.16703; }
   45% {
-    opacity: 0.30403; }
+    opacity: 0.72122; }
   50% {
-    opacity: 0.41087; }
+    opacity: 0.56182; }
   55% {
-    opacity: 0.39106; }
+    opacity: 0.4994; }
   60% {
-    opacity: 0.39213; }
+    opacity: 1.28789; }
   65% {
-    opacity: 0.47135; }
+    opacity: 0.41121; }
   70% {
-    opacity: 1.22157; }
+    opacity: 0.49776; }
   75% {
-    opacity: 0.4509; }
+    opacity: 0.52131; }
   80% {
-    opacity: 1.16159; }
+    opacity: 0.30944; }
   85% {
-    opacity: 0.43563; }
+    opacity: 1.26014; }
   90% {
-    opacity: 0.60625; }
+    opacity: 1.20386; }
   95% {
-    opacity: 0.48845; }
+    opacity: 0.41713; }
   100% {
-    opacity: 1.1896; } }
+    opacity: 0.88091; } }
 
 @font-face {
   font-family: 'perfect_dos_vga_437regular';
@@ -122,12 +122,14 @@ form input[type=number] {
   height: 30px;
   font-size: 1.2em;
   display: block;
-  width: 100%; }
+  width: 100%;
+  text-shadow: 1px 1px 8px #00a800, -1px -1px 2px #00a800, 1px -1px 0 #00a800; }
 
 form ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #0fff00;
   opacity: 0.4;
+  text-shadow: 1px 1px 8px #00a800, -1px -1px 2px #00a800, 1px -1px 0 #00a800;
   position: relative;
   z-index: -1;
   font-size: 1.0001em; }
@@ -136,6 +138,7 @@ form ::-moz-placeholder {
   /* Firefox 19+ */
   color: #0fff00;
   opacity: 0.4;
+  text-shadow: 1px 1px 8px #00a800, -1px -1px 2px #00a800, 1px -1px 0 #00a800;
   position: relative;
   z-index: -1;
   font-size: 1.0001em; }
@@ -144,6 +147,7 @@ form :-ms-input-placeholder {
   /* IE 10+ */
   color: #0fff00;
   opacity: 0.4;
+  text-shadow: 1px 1px 8px #00a800, -1px -1px 2px #00a800, 1px -1px 0 #00a800;
   position: relative;
   z-index: -1;
   font-size: 1.0001em; }
@@ -152,6 +156,7 @@ form :-moz-placeholder {
   /* Firefox 18- */
   color: #0fff00;
   opacity: 0.4;
+  text-shadow: 1px 1px 8px #00a800, -1px -1px 2px #00a800, 1px -1px 0 #00a800;
   position: relative;
   z-index: -1;
   font-size: 1.0001em; }
@@ -198,7 +203,8 @@ form input[type=checkbox] {
     content: "";
     width: 1em;
     height: 1em;
-    background: #00a800; }
+    background: #00a800;
+    box-shadow: 1px 1px 8px #00a800, -1px -1px 2px #00a800, 1px -1px 0 #00a800; }
   form input[type=checkbox]:checked:before {
     content: "x";
     width: 1em;
@@ -253,7 +259,8 @@ button {
   button:hover {
     color: #0fff00;
     background: #000;
-    border: solid 2px #0fff00; }
+    border: solid 2px #0fff00;
+    text-shadow: 1px 1px 8px #00a800, -1px -1px 2px #00a800, 1px -1px 0 #00a800; }
   button:active {
     background: #00a800; }
 
