@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+body {
+  background: #000;
+  font-family: $fontFamily;
+  font-size: $baseFontSize;
+  color: $primaryColor;
+  padding: 10px;
+  cursor: default;
+
+  &:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('hercules-row.gif');
+    opacity: 0.5;
+    pointer-events: none;
+    animation: flicker 0.15s infinite;
+  }
+
+  > * {
+    //filter: blur(1px);
+    @include blurText($dimmedColor);
+  }
+
+  * {
+    box-sizing: border-box;
+    font-family: $fontFamily;
+  }
+}

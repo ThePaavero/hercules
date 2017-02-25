@@ -1,0 +1,270 @@
+@charset "UTF-8";
+body > * {
+  transform: scale(0.99); }
+
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%; }
+  *:focus, *:active {
+    outline: none; }
+
+body {
+  background: #000;
+  font-family: "perfect_dos_vga_437regular", monospaced;
+  font-size: 20px;
+  color: #0fff00;
+  padding: 10px;
+  cursor: default; }
+  body:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("hercules-row.gif");
+    opacity: 0.5;
+    pointer-events: none;
+    animation: flicker 0.15s infinite; }
+  body > * {
+    text-shadow: 1px 1px 8px #00a800, -1px -1px 2px #00a800, 1px -1px 0 #00a800; }
+  body * {
+    box-sizing: border-box;
+    font-family: "perfect_dos_vga_437regular", monospaced; }
+
+@keyframes flicker {
+  0% {
+    opacity: 1.15137; }
+  5% {
+    opacity: 0.39541; }
+  10% {
+    opacity: 0.36317; }
+  15% {
+    opacity: 0.98436; }
+  20% {
+    opacity: 0.75801; }
+  25% {
+    opacity: 1.16107; }
+  30% {
+    opacity: 0.70615; }
+  35% {
+    opacity: 0.69325; }
+  40% {
+    opacity: 1.21448; }
+  45% {
+    opacity: 1.15953; }
+  50% {
+    opacity: 1.15622; }
+  55% {
+    opacity: 0.66226; }
+  60% {
+    opacity: 0.6545; }
+  65% {
+    opacity: 0.33116; }
+  70% {
+    opacity: 1.1914; }
+  75% {
+    opacity: 0.34901; }
+  80% {
+    opacity: 0.62421; }
+  85% {
+    opacity: 0.34025; }
+  90% {
+    opacity: 0.5563; }
+  95% {
+    opacity: 1.19308; }
+  100% {
+    opacity: 1.10295; } }
+
+@font-face {
+  font-family: 'perfect_dos_vga_437regular';
+  src: url("fonts/perfect_dos_vga_437-webfont.woff2") format("woff2"), url("fonts/perfect_dos_vga_437-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 2vh;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 1.6vh; }
+
+h3 {
+  font-size: 1.4em;
+  margin-bottom: 1vh; }
+
+h4 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 0.7vh; }
+
+form fieldset {
+  border: solid 2px #0fff00;
+  padding: 10px;
+  margin: 20px 0; }
+  form fieldset legend {
+    font-size: 1em; }
+
+form input {
+  font-size: 1em; }
+
+form input[type=text],
+form input[type=email],
+form input[type=password],
+form input[type=number] {
+  border: solid 2px #0fff00;
+  background: transparent;
+  color: #0fff00;
+  padding: 5px;
+  height: 30px;
+  font-size: 1.2em;
+  display: block;
+  width: 100%; }
+
+form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #0fff00;
+  opacity: 0.4;
+  position: relative;
+  z-index: -1;
+  font-size: 1.0001em; }
+
+form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #0fff00;
+  opacity: 0.4;
+  position: relative;
+  z-index: -1;
+  font-size: 1.0001em; }
+
+form :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #0fff00;
+  opacity: 0.4;
+  position: relative;
+  z-index: -1;
+  font-size: 1.0001em; }
+
+form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #0fff00;
+  opacity: 0.4;
+  position: relative;
+  z-index: -1;
+  font-size: 1.0001em; }
+
+form input[type=submit] {
+  color: #000;
+  background: #0fff00;
+  border: none;
+  height: 30px;
+  padding: 5px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), -1px -1px 1px rgba(0, 0, 0, 0.3), 1px -1px 1px rgba(0, 0, 0, 0.3); }
+
+form input[type=radio] {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: -9000px;
+  margin-right: 10px; }
+  form input[type=radio]:before {
+    position: absolute;
+    top: 0;
+    left: 9000px;
+    display: block;
+    width: 20px;
+    content: "◎";
+    color: #0fff00;
+    font-size: 2em;
+    transform: translateY(-0.4em); }
+  form input[type=radio]:checked:before {
+    content: "◉"; }
+
+form input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: -9000px;
+  margin-right: 1px; }
+  form input[type=checkbox]:before {
+    position: absolute;
+    top: 0;
+    left: 9000px;
+    display: block;
+    content: "";
+    width: 1em;
+    height: 1em;
+    background: #00a800; }
+  form input[type=checkbox]:checked:before {
+    content: "x";
+    width: 1em;
+    height: 1em;
+    text-indent: 5.5px;
+    background: #0fff00; }
+
+section {
+  border: solid 2px #0fff00;
+  padding: 10px;
+  margin: 10px 0; }
+
+::-moz-selection {
+  background: #0fff00;
+  color: #000; }
+
+::selection {
+  background: #0fff00;
+  color: #000; }
+
+table {
+  border: solid 2px #0fff00;
+  width: 100%; }
+  table thead {
+    color: #000;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), -1px -1px 1px rgba(0, 0, 0, 0.2), 1px -1px 1px rgba(0, 0, 0, 0.2);
+    background: #00a800;
+    color: #000; }
+  table td, table th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: solid 2px #00a800; }
+  table tr:last-of-type td, table tr:last-of-type th {
+    border: none; }
+
+button {
+  background: #0fff00;
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), -1px -1px 1px rgba(0, 0, 0, 0.2), 1px -1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+  padding: 5px;
+  border: solid 2px #000; }
+  button:hover {
+    color: #0fff00;
+    background: #000;
+    border: solid 2px #0fff00; }
+  button:active {
+    background: #00a800; }
+
+.img-wrapper:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0fff00;
+  mix-blend-mode: multiply;
+  z-index: 1; }
+
+.img-wrapper img {
+  filter: grayscale(1) contrast(1.2) blur(1px); }
+
+p {
+  margin: 20px 0; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: solid 2px #00a800; }

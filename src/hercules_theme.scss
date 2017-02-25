@@ -1,0 +1,46 @@
+$primaryColor: #0fff00;
+$dimmedColor: #00a800;
+$baseFontSize: 20px;
+$rowHeight: $baseFontSize * 1.5;
+$fontFamily: 'perfect_dos_vga_437regular', monospaced;
+
+body > * {
+  transform: scale(0.99);
+}
+
+@mixin dark() {
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), -1px -1px 1px rgba(0, 0, 0, 0.2), 1px -1px 1px rgba(0, 0, 0, 0.2);
+}
+
+@mixin dim() {
+  color: $primaryColor;
+  opacity: 0.4;
+}
+
+@mixin bright() {
+  color: $primaryColor;
+  font-weight: bold;
+}
+
+@import "blurs";
+@import "base";
+@import "flicker";
+@import "fonts";
+@import "headings";
+@import "form_elements";
+@import "section";
+@import "selection";
+@import "table";
+@import "buttons";
+@import "images";
+
+p {
+  margin: 20px 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: solid 2px $dimmedColor;
+}

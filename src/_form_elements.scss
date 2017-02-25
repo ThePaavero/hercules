@@ -1,0 +1,114 @@
+@mixin placeholder() {
+  @include dim;
+  position: relative;
+  z-index: -1;
+  font-size: 1.0001em;
+}
+
+form {
+
+  fieldset {
+    border: solid 2px $primaryColor;
+    padding: 10px;
+    margin: 20px 0;
+
+    legend {
+      font-size: 1em;
+    }
+  }
+
+  input {
+    font-size: 1em;
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=number] {
+    border: solid 2px $primaryColor;
+    background: transparent;
+    color: $primaryColor;
+    padding: 5px;
+    height: $rowHeight;
+    font-size: 1.2em;
+    display: block;
+    width: 100%;
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    @include placeholder;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    @include placeholder;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    @include placeholder;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    @include placeholder;
+  }
+
+  input[type=submit] {
+    color: #000;
+    background: $primaryColor;
+    border: none;
+    height: $rowHeight;
+    padding: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3), -1px -1px 1px rgba(0, 0, 0, 0.3), 1px -1px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  input[type=radio] {
+    width: $baseFontSize;
+    height: $baseFontSize;
+    position: relative;
+    left: -9000px;
+    margin-right: 10px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 9000px;
+      display: block;
+      width: 20px;
+      content: "◎";
+      color: $primaryColor;
+      font-size: 2em;
+      transform: translateY(-0.4em);
+    }
+
+    &:checked {
+      &:before {
+        content: "◉";
+      }
+    }
+  }
+
+  input[type=checkbox] {
+    width: $baseFontSize;
+    height: $baseFontSize;
+    position: relative;
+    left: -9000px;
+    margin-right: 1px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 9000px;
+      display: block;
+      content: "";
+      width: 1em;
+      height: 1em;
+      background: $dimmedColor;
+    }
+
+    &:checked {
+      &:before {
+        content: "x";
+        width: 1em;
+        height: 1em;
+        text-indent: 5.5px;
+        background: $primaryColor;
+      }
+    }
+  }
+}

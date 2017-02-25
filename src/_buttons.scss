@@ -1,0 +1,17 @@
+button {
+  background: $primaryColor;
+  @include dark;
+  font-size: 1.2em;
+  padding: 5px;
+  border: solid 2px #000;
+
+  &:hover {
+    color: $primaryColor;
+    background: #000;
+    border: solid 2px $primaryColor;
+  }
+
+  &:active {
+    background: $dimmedColor;
+  }
+}

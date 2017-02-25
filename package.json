@@ -1,0 +1,20 @@
+{
+  "name": "hercules-theme",
+  "version": "1.0.0",
+  "description": "-",
+  "main": "",
+  "scripts": {
+    "watch-styles": "npm run build-styles -- --watch",
+    "build-styles": "node-sass src/hercules_theme.scss -o ./",
+    "post-styles": "postcss --use autoprefixer -o hercules_theme.css hercules_theme.css"
+  },
+  "author": "Pekka Siiriäinen",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "6.7.4",
+    "node-sass": "4.5.0",
+    "postcss": "5.2.14",
+    "postcss-cli": "3.0.0-beta",
+    "watchify": "3.9.0"
+  }
+}
