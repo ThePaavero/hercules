@@ -35,47 +35,47 @@ body {
 
 @keyframes flicker {
   0% {
-    opacity: 1.15137; }
+    opacity: 1.05408; }
   5% {
-    opacity: 0.39541; }
+    opacity: 0.8335; }
   10% {
-    opacity: 0.36317; }
+    opacity: 0.59276; }
   15% {
-    opacity: 0.98436; }
+    opacity: 0.31397; }
   20% {
-    opacity: 0.75801; }
+    opacity: 1.03196; }
   25% {
-    opacity: 1.16107; }
+    opacity: 0.6168; }
   30% {
-    opacity: 0.70615; }
+    opacity: 0.6718; }
   35% {
-    opacity: 0.69325; }
+    opacity: 0.54533; }
   40% {
-    opacity: 1.21448; }
+    opacity: 1.00392; }
   45% {
-    opacity: 1.15953; }
+    opacity: 1.17606; }
   50% {
-    opacity: 1.15622; }
+    opacity: 0.86883; }
   55% {
-    opacity: 0.66226; }
+    opacity: 0.63764; }
   60% {
-    opacity: 0.6545; }
+    opacity: 0.95348; }
   65% {
-    opacity: 0.33116; }
+    opacity: 1.28599; }
   70% {
-    opacity: 1.1914; }
+    opacity: 1.27689; }
   75% {
-    opacity: 0.34901; }
+    opacity: 1.00681; }
   80% {
-    opacity: 0.62421; }
+    opacity: 0.93401; }
   85% {
-    opacity: 0.34025; }
+    opacity: 0.3219; }
   90% {
-    opacity: 0.5563; }
+    opacity: 0.37282; }
   95% {
-    opacity: 1.19308; }
+    opacity: 0.78134; }
   100% {
-    opacity: 1.10295; } }
+    opacity: 0.5676; } }
 
 @font-face {
   font-family: 'perfect_dos_vga_437regular';
@@ -260,6 +260,19 @@ button {
 
 .img-wrapper img {
   filter: grayscale(1) contrast(1.2) blur(1px); }
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px; }
+  ol li, ul li {
+    margin-bottom: 5px; }
+
+ul {
+  margin-left: 25px; }
+
+ol {
+  margin-left: 40px; }
 
 p {
   margin: 20px 0; }
