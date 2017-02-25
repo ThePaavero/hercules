@@ -70,6 +70,7 @@ form {
       left: 9000px;
       display: block;
       width: 20px;
+      @include blurText($dimmedColor);
       content: "◎";
       color: $primaryColor;
       font-size: 2em;
@@ -111,22 +112,13 @@ form {
       }
     }
   }
+
   select {
     border: none;
     background: $dimmedColor;
+    @include dark;
     height: $rowHeight;
     line-height: $rowHeight;
     font-size: 1.2em;
-    outline: none !important;
-
-    &:focus,
-    &:active {
-      outline: solid 1px red;
-    }
-
-    option {
-      border: none;
-      outline: none !important;
-    }
   }
 }

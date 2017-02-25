@@ -35,47 +35,47 @@ body {
 
 @keyframes flicker {
   0% {
-    opacity: 0.59897; }
+    opacity: 0.43088; }
   5% {
-    opacity: 0.73452; }
+    opacity: 1.09719; }
   10% {
-    opacity: 1.09311; }
+    opacity: 0.45769; }
   15% {
-    opacity: 0.35059; }
+    opacity: 1.15172; }
   20% {
-    opacity: 0.45553; }
+    opacity: 1.13348; }
   25% {
-    opacity: 0.69458; }
+    opacity: 0.44637; }
   30% {
-    opacity: 0.6917; }
+    opacity: 1.13154; }
   35% {
-    opacity: 0.70045; }
+    opacity: 1.27784; }
   40% {
-    opacity: 1.19169; }
+    opacity: 1.21311; }
   45% {
-    opacity: 0.42147; }
+    opacity: 0.30403; }
   50% {
-    opacity: 1.01774; }
+    opacity: 0.41087; }
   55% {
-    opacity: 1.15422; }
+    opacity: 0.39106; }
   60% {
-    opacity: 1.05605; }
+    opacity: 0.39213; }
   65% {
-    opacity: 1.19612; }
+    opacity: 0.47135; }
   70% {
-    opacity: 1.06549; }
+    opacity: 1.22157; }
   75% {
-    opacity: 0.64829; }
+    opacity: 0.4509; }
   80% {
-    opacity: 1.13242; }
+    opacity: 1.16159; }
   85% {
-    opacity: 1.22057; }
+    opacity: 0.43563; }
   90% {
-    opacity: 0.80622; }
+    opacity: 0.60625; }
   95% {
-    opacity: 0.60986; }
+    opacity: 0.48845; }
   100% {
-    opacity: 0.37541; } }
+    opacity: 1.1896; } }
 
 @font-face {
   font-family: 'perfect_dos_vga_437regular';
@@ -176,6 +176,7 @@ form input[type=radio] {
     left: 9000px;
     display: block;
     width: 20px;
+    text-shadow: 1px 1px 8px #00a800, -1px -1px 2px #00a800, 1px -1px 0 #00a800;
     content: "◎";
     color: #0fff00;
     font-size: 2em;
@@ -208,15 +209,11 @@ form input[type=checkbox] {
 form select {
   border: none;
   background: #00a800;
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2), -1px -1px 1px rgba(0, 0, 0, 0.2), 1px -1px 1px rgba(0, 0, 0, 0.2);
   height: 30px;
   line-height: 30px;
-  font-size: 1.2em;
-  outline: none !important; }
-  form select:focus, form select:active {
-    outline: solid 1px red; }
-  form select option {
-    border: none;
-    outline: none !important; }
+  font-size: 1.2em; }
 
 section {
   border: solid 2px #0fff00;
